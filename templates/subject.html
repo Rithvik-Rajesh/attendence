@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+{% extends "index.html" %}
+{% block content %}
+
+    <table class="table table-bordered table-striped">
+      <thead class="table table-dark "> 
+        <tr> 
+          <td>Name</td>
+          <td>Roll Number</td>
+          {%for student in col%}   
+            <td>{{student[0]}}</td> 
+            {%endfor%} 
+        </tr> 
+      </thead>
+      <tbody>
+        {%for student in data%} 
+               <tr> 
+                {%for students in student%}   
+                  <td>{{students}}</td> 
+                {%endfor%} 
+                </tr> 
+            {%endfor%} 
+      </tbody>
+    </table>
+
+{% endblock %}

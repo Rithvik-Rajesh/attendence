@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+{% extends "index.html" %}
+{% block content %}
+<table class="table table-bordered table-striped">
+    <thead class="table table-dark "> 
+      <tr> 
+        <th scope="col">Reg No</th>
+        <th scope="col">Name</th> 
+        <th scope="col">Subject</th>
+      </tr> 
+    </thead>
+    <tbody>
+        {%for staff in data%} 
+             <tr> 
+               <td>{{staff[0]}}</td> 
+               <td>{{staff[1]}}</td> 
+               <td><a href="subject/{{staff[2]}}" target="_blank">{{staff[2]}}</a></td>
+              </tr> 
+        {%endfor%} 
+    </tbody>
+  </table>
+{% endblock %}

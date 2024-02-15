@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+{% extends "index.html" %}
+{% block content %}
+<!-- <form method="POST"> 
+    <label>Enter Roll No:</label> 
+    <input type="rollno" name="rollno" placeholder="Enter your Roll No" required><br/> 
+    <label>Enter Name:</label> 
+    <input type="name" name="name" placeholder="Enter your name" required><br/> 
+    <label>Enter Email:</label> 
+    <input type="email" name="email" placeholder="Enter your email" required><br/> 
+    <label>Enter City:</label> 
+    <input type="name" name="city" placeholder="Enter your City name" required><br/> 
+    <label>Enter Country:</label> 
+    <input type="name" name="country" placeholder="Enter the Country name" required><br/> 
+    <label>Enter Phone num:</label> 
+    <input type="name" name="phone" placeholder="Your Phone Number" required><br/> 
+    <input type = "submit" value = "submit"/><br/> 
+</form>  -->
+
+<form class="row g-4" method="POST">
+    <div class="col-mb-4">
+        <label for="inputFirstName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" name = "name" placeholder="Full Name" aria-label="First name">
+      </div>
+      <div class="col-md-12" >
+        <label for="inputLastName" class="form-label">Roll Number</label>
+        <input type="text" class="form-control" name = "rollno" placeholder="Enter your Roll Number" aria-label="Roll Number">
+      </div>
+
+
+    <div class="col-md-6">
+      <label for="Email" class="form-label">Email</label>
+      <input type="email" class="form-control" name="email" placeholder="Email">
+    </div>
+    <div class="col-md-6">
+      <label for="Phone" class="form-label">Phone</label>
+      <input type="number" class="form-control" name="phone" placeholder = "Phone Number">
+    </div>
+
+    <div class="col-md-7">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" name="city" placeholder="City">
+    </div>
+
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">Country</label>
+      <input type="text" class="form-control" name="country" placeholder="Country">
+    </div>
+
+    <div class="col-md-4">
+      <label for="inputdob" class="form-label">Date of Birth</label>
+      <input type="text" class="form-control" name="dofb" placeholder="Date of Birth">
+    </div>
+    
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>  
+
+
+{% endblock %}

@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+{% extends "index.html" %}
+{% block content %}
+
+    <!-- <style> 
+        table, th, td { 
+          border:1px solid black; 
+        } 
+        </style>
+    <body> 
+        <table style="width:100%"> 
+            <tr> 
+              <th>Roll No</th>
+              <th>Name</th> 
+              <th>Email</th> 
+              <th>City</th> 
+              <th>Country</th> 
+              <th>Phone Number</th> 
+              <th>Date Of Birth</th>
+            </tr> 
+            {%for student in data%} 
+               <tr> 
+                 <td>{{student[0]}}</td> 
+                 <td>{{student[1]}}</td> 
+                 <td>{{student[2]}}</td> 
+                 <td>{{student[3]}}</td> 
+                 <td>{{student[4]}}</td> 
+                 <td>{{student[5]}}</td>
+                 <td>{{student[6]}}</td> 
+                </tr> 
+            {%endfor%} 
+          </table>    scope="col"       
+    </body>  -->
+
+    <table class="table table-bordered table-striped">
+      <thead class="table table-dark "> 
+        <tr> 
+          <th scope="col">Roll No</th>
+          <th scope="col">Name</th> 
+          <th scope="col">Email</th> 
+          <th scope="col">City</th> 
+          <th scope="col">Country</th> 
+          <th scope="col">Phone Number</th> 
+          <th scope="col">Date Of Birth</th>
+        </tr> 
+      </thead>
+      <tbody>
+        {%for student in data%} 
+               <tr> 
+                 <td>{{student[0]}}</td> 
+                 <td>{{student[1]}}</td> 
+                 <td>{{student[2]}}</td> 
+                 <td>{{student[3]}}</td> 
+                 <td>{{student[4]}}</td> 
+                 <td>{{student[5]}}</td>
+                 <td>{{student[6]}}</td> 
+                </tr> 
+            {%endfor%} 
+      </tbody>
+    </table>
+
+{% endblock %}
